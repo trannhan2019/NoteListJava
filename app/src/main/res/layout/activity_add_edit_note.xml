@@ -24,6 +24,8 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
+        android:gravity="top|left"
+        android:lines="5"
         android:id="@+id/editTextNoteContent"
         android:layout_width="0dp"
         android:layout_height="0dp"
