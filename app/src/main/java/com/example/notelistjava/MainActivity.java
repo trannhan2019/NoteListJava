@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent1 = new Intent(this,AddEditNoteActivity.class);
                 intent1.putExtra("Note",selectedNote);
                 this.startActivityForResult(intent1,MY_REQUEST_CODE);
+                break;
             case MENU_ITEM_DELETE:
                 new AlertDialog.Builder(this)
                         .setMessage(selectedNote.getNoteTile()+". Are you sure you want to delete?")
@@ -99,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
                         })
                         .setNegativeButton("No",null)
                         .show();
+                break;
         }
 
         return super.onContextItemSelected(item);
