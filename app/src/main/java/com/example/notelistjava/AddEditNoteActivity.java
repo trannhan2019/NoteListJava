@@ -51,7 +51,7 @@ public class AddEditNoteActivity extends AppCompatActivity {
         });
 
         Intent intent = getIntent();
-        this.note = (Note) intent.getSerializableExtra("note");
+        this.note = (Note) intent.getSerializableExtra("Note");
         if (note == null){
             this.mode = MODE_CREATE;
         }else {
